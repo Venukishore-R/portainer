@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   go-app:
-    build: .
+    image: venukishore/go_health_check-go-app:1.0.0
     ports:
-      - "8080:8080"
+      - "3000:3000"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
       interval: 10s

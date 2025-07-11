@@ -14,7 +14,7 @@ func main() {
 	http.HandleFunc("/health", healthCheckHandler)
 
 	log.Println("Server starting on port 8080...")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	if err := http.ListenAndServe(":3000", nil); err != nil {
 		log.Fatalf("Server failed to start: %v", err)
 	}
 }
